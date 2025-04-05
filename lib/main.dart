@@ -17,9 +17,14 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: ScreenSplash()
+    return SafeArea(
+      child: MaterialApp(
+        theme: ThemeData(
+          //brightness: Brightness.dark
+        ),
+        debugShowCheckedModeBanner: false,
+        home: ScreenSplash()
+      ),
     );
   }
 }
